@@ -3,196 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almalar | Plataforma de Serviços Domésticos em Guimarães</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Almalar | Serviços Domésticos em Guimarães</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <style>
-        /* VARIÁVEIS DE CORES */
-        :root {
-            --primary-dark: #1e293b;
-            --primary-blue: #2563eb;
-            --accent-gold: #d97706;
-            --bg-light: #f8fafc;
-            --text-dark: #334155;
-            --text-light: #94a3b8;
-            --whatsapp: #25D366;
-        }
-
-        /* RESET E BASE */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Poppins', sans-serif; color: var(--text-dark); background-color: var(--bg-light); line-height: 1.6; }
-        a { text-decoration: none; }
-
-        /* NAVEGAÇÃO */
-        nav {
-            background-color: white;
-            padding: 15px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary-dark); }
-        .logo i { color: var(--primary-blue); margin-right: 8px; }
-        .nav-links a { margin-left: 20px; color: var(--text-dark); font-weight: 600; transition: color 0.3s; }
-        .nav-links a:hover { color: var(--primary-blue); }
-        .nav-cta { background-color: var(--primary-blue); color: white !important; padding: 10px 20px; border-radius: 5px; }
-
-        /* HERO SECTION */
-        .hero {
-            background: linear-gradient(rgba(30, 41, 59, 0.9), rgba(30, 41, 59, 0.8)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
-            color: white;
-            padding: 100px 5%;
-            text-align: center;
-        }
-        .hero h1 { font-size: 3rem; margin-bottom: 20px; font-weight: 700; }
-        .hero p { font-size: 1.2rem; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; }
-        
-        /* BOTÃO WHATSAPP */
-        .btn-whatsapp {
-            background-color: var(--whatsapp);
-            color: white;
-            font-size: 1.2rem;
-            font-weight: 600;
-            padding: 15px 40px;
-            border-radius: 50px;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .btn-whatsapp:hover { transform: translateY(-3px); box-shadow: 0 15px 25px rgba(37, 211, 102, 0.4); color: white; }
-
-        /* CATEGORIAS E SERVIÇOS */
-        .section-title { text-align: center; margin: 80px 0 40px; font-size: 2.2rem; color: var(--primary-dark); }
-        .category-container { width: 90%; max-width: 1200px; margin: 0 auto 60px; }
-        .category-header { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
-        .category-header h2 { font-size: 1.8rem; color: var(--primary-dark); }
-        .category-header i { font-size: 2rem; color: var(--primary-blue); }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        .service-card {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            border: 1px solid #f1f5f9;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .service-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
-        .service-card i { font-size: 2.5rem; color: var(--accent-gold); margin-bottom: 15px; }
-        .service-card h3 { margin-bottom: 10px; font-size: 1.3rem; color: var(--primary-dark); }
-        .service-card p { color: var(--text-light); font-size: 0.95rem; }
-
-        /* RODAPÉ */
-        footer { background-color: var(--primary-dark); color: white; text-align: center; padding: 40px 20px; margin-top: 60px; }
-        footer p { opacity: 0.7; }
-
-        /* RESPONSIVO */
-        @media (max-width: 768px) {
-            .nav-links { display: none; }
-            .hero h1 { font-size: 2.2rem; }
-        }
-    </style>
-</head>
+    <link rel="stylesheet" href="style.css"> </head>
 <body>
 
     <nav>
         <div class="logo"><i class="fa-solid fa-house-chimney"></i> Almalar</div>
         <div class="nav-links">
-            <a href="#reparacoes">Reparações</a>
-            <a href="#limpezas">Limpezas</a>
-            <a href="#obras">Obras</a>
-            <a href="#contactos" class="nav-cta">Agendar Agora</a>
+            <a href="index.html">Início</a>
         </div>
     </nav>
 
-    <header class="hero">
-        <h1>A Sua Casa em Boas Mãos</h1>
-        <p>A primeira plataforma de serviços domésticos exclusiva de Guimarães. Profissionais rigorosamente selecionados, prontos a resolver qualquer problema na sua casa com preço transparente.</p>
-        <a href="https://wa.me/351000000000?text=Olá!%20Sou%20de%20Guimarães%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Almalar." class="btn-whatsapp" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i> Pedir Orçamento Grátis
-        </a>
+    <header class="hero-minimal">
+        <h1>O que precisa para a sua casa hoje?</h1>
+        <p>Escolha uma categoria abaixo e encontre profissionais verificados em Guimarães com preços transparentes.</p>
     </header>
 
-    <h2 class="section-title">Os Nossos Serviços</h2>
+    <main class="container">
+        <h2 class="section-title">Categorias de Serviços</h2>
+        <div class="grid">
+            
+            <div class="card">
+                <div class="card-img"><i class="fa-solid fa-wrench"></i></div>
+                <div class="card-content">
+                    <h3 class="card-title">Reparações e Manutenção</h3>
+                    <p>Canalização, eletricidade, avarias e pequenos arranjos domésticos rápidos.</p>
+                    <a href="reparacoes.html" class="card-btn">Ver Serviços</a>
+                </div>
+            </div>
 
-    <section class="category-container" id="reparacoes">
-        <div class="category-header">
-            <i class="fa-solid fa-wrench"></i>
-            <h2>Reparações e Manutenção</h2>
-        </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <i class="fa-solid fa-faucet-drip"></i>
-                <h3>Canalização</h3>
-                <p>Resolução de fugas de água, desentupimentos, substituição de torneiras e reparações de autoclismos.</p>
+            <div class="card">
+                <div class="card-img"><i class="fa-solid fa-broom"></i></div>
+                <div class="card-content">
+                    <h3 class="card-title">Limpeza e Bem-Estar</h3>
+                    <p>Limpezas regulares, limpezas profundas e manutenção do seu lar.</p>
+                    <a href="#" class="card-btn">Ver Serviços</a> </div>
             </div>
-            <div class="service-card">
-                <i class="fa-solid fa-bolt"></i>
-                <h3>Eletricidade</h3>
-                <p>Instalação de quadros elétricos, focos LED, substituição de tomadas e diagnóstico de curtos-circuitos.</p>
-            </div>
-            <div class="service-card">
-                <i class="fa-solid fa-snowflake"></i>
-                <h3>Eletrodomésticos</h3>
-                <p>Arranjo de máquinas de lavar, frigoríficos e fornos. Assistência técnica multimarca ao domicílio.</p>
-            </div>
-        </div>
-    </section>
 
-    <section class="category-container" id="limpezas">
-        <div class="category-header">
-            <i class="fa-solid fa-broom"></i>
-            <h2>Limpeza e Bem-Estar</h2>
-        </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <i class="fa-solid fa-sparkles"></i>
-                <h3>Limpeza Regular</h3>
-                <p>Manutenção semanal ou quinzenal da sua casa. Profissionais de confiança e produtos de alta qualidade.</p>
+            <div class="card">
+                <div class="card-img"><i class="fa-solid fa-hammer"></i></div>
+                <div class="card-content">
+                    <h3 class="card-title">Projetos e Montagens</h3>
+                    <p>Montagem de móveis, pinturas e pequenas melhorias na habitação.</p>
+                    <a href="#" class="card-btn">Ver Serviços</a> </div>
             </div>
-            <div class="service-card">
-                <i class="fa-solid fa-soap"></i>
-                <h3>Limpeza Profunda</h3>
-                <p>Ideal para mudanças de casa, pós-obras ou limpezas de primavera (inclui vidros e estores).</p>
-            </div>
-        </div>
-    </section>
 
-    <section class="category-container" id="obras">
-        <div class="category-header">
-            <i class="fa-solid fa-hammer"></i>
-            <h2>Projetos e Montagens</h2>
         </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <i class="fa-solid fa-box-open"></i>
-                <h3>Montagem de Móveis</h3>
-                <p>Montagem rápida e segura de mobiliário IKEA, Conforama, Leroy Merlin, entre outros.</p>
-            </div>
-            <div class="service-card">
-                <i class="fa-solid fa-paint-roller"></i>
-                <h3>Pintura de Interiores</h3>
-                <p>Pintura de tetos, paredes, remoção de humidade e pequenos restauros em pladur.</p>
-            </div>
-        </div>
-    </section>
+    </main>
 
-    <footer id="contactos">
-        <h2>🏠 Almalar</h2>
-        <p style="margin-top: 15px;">A servir Guimarães com dedicação.</p>
-        <p style="margin-top: 10px; font-size: 0.9em;">&copy; 2026 Almalar. Todos os direitos reservados.</p>
+    <footer>
+        <p>&copy; 2026 Almalar - Guimarães</p>
     </footer>
 
 </body>
